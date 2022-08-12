@@ -1,0 +1,6 @@
+.searchPage {
+  padding-top: 110px;
+}
+.not-exist {
+  color: var(--mainColor);
+}

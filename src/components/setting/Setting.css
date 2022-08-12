@@ -1,0 +1,116 @@
+/* start setting */
+.settings {
+  position: fixed;
+  right: 0;
+  top: 54px;
+  z-index: 1002;
+  width: 350px;
+  min-height: 100vh;
+  background-color: #fff;
+  transition: 0.3s;
+  border: 1px solid #eee;
+  /* position: relative; */
+}
+.toggle-settings {
+  position: absolute;
+  right: 0;
+  top: 130px;
+  background-color: #fff;
+  width: 30px;
+  padding: 8px 0;
+  text-align: center;
+  left: -30px;
+  cursor: pointer;
+}
+.settings .settings-gear {
+}
+.show-settings {
+  right: 0;
+}
+.hide-settings {
+  right: -350px;
+}
+.settings .settings-container {
+}
+.settings .settings-container .option-box {
+  /* text-align: center; */
+  background-color: #eee;
+  padding: 10px 10px 10px;
+  margin: 10px;
+}
+.settings .option-box h4 {
+  color: var(--main-color);
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 14px;
+}
+.settings .option-box .ul-colors {
+  margin-top: 10px !important;
+  margin-left: -5px !important;
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.settings .option-box .ul-colors li {
+  margin-left: 5px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  cursor: pointer;
+  opacity: 0.5;
+  border: 3px solid #eee;
+}
+
+.settings .reset {
+  background-color: #f44336;
+  padding: 10px;
+  margin: 10px;
+  color: #fff;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 6px;
+  /* position: absolute;
+  width: 90%;
+  bottom: 50px; */
+}
+
+/* end setting */
+
+.settings .option-box h4 {
+  font-weight: bold;
+}
+.settings .option-box ul:last-child {
+  max-height: 20vh;
+  overflow-y: scroll;
+}
+.settings .option-box ul li input {
+  display: inline-block;
+  margin-right: 10px;
+  width: 15px;
+  height: 15px;
+  accent-color: #22a5ad;
+  border: none !important;
+  outline: none !important;
+  cursor: pointer;
+}
+.settings .option-box ul {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.langName {
+  color: #22a5ad;
+}
+
+.settings .option-box .selected-reciter {
+  padding: 20px 10px;
+  background-color: #f8f9fa;
+}
+.settings .option-box .selected-reciter svg {
+  color: #009688;
+  stroke-width: 0;
+  height: 1.4rem !important;
+  width: 1.4rem !important;
+}

@@ -1,0 +1,74 @@
+.chapters {
+  /* direction: rtl; */
+}
+
+.chapters .chapter {
+  /* border: 2px solid #eee; */
+  display: flex;
+  padding: 10px 20px;
+  justify-content: center;
+  align-items: center;
+  box-shadow: #00000026 1.95px 1.95px 2.6px;
+  transition: 0.3s;
+}
+.chapters a {
+  text-decoration: none;
+  color: #000;
+}
+.chapters a:hover {
+  background-color: #f8f9fa;
+  color: #000;
+}
+
+.chapters .chapter .info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  margin-left: 20px;
+}
+
+.chapters .chapter .info p {
+  margin-bottom: 0 !important;
+}
+.chapters .chapter .info p:first-of-type {
+  font-size: 16px;
+  font-weight: 600;
+  font-family: "amiri", sans-serif;
+}
+.chapters .chapter .info p:last-of-type {
+  font-size: 12px;
+  font-weight: 600;
+  font-family: "Open Sans", sans-serif;
+}
+.chapter span {
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  font-weight: bold;
+  z-index: 2 !important;
+  transition: 0.3s;
+}
+.chapter span::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #f0f0f0;
+  transform: rotate(45deg);
+  z-index: -1 !important;
+  transition: 0.3s;
+}
+
+.chapters a:hover span {
+  color: #fff;
+}
+.chapters a:hover span::before {
+  background-color: var(--mainColor) !important;
+}

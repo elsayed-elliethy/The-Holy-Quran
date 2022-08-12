@@ -1,0 +1,19 @@
+.navbar {
+  position: fixed;
+  z-index: 10;
+  border-bottom: 1px solid var(--mainColor);
+}
+.navbar a {
+  color: var(--mainColor);
+  font-weight: bold;
+  cursor: pointer;
+}
+.navbar a:hover {
+  color: var(--mainColor);
+}
+.navbar span {
+  margin-left: -10px;
+}
+.navbar svg {
+  color: var(--mainColor);
+}

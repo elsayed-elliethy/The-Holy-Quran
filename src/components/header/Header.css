@@ -1,0 +1,17 @@
+.header {
+  height: 440px;
+  background-image: url("../../assets/header.jpg");
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header svg {
+  fill: #fff;
+  font-size: 20px;
+  width: 256px !important;
+  margin: auto;
+  display: block;
+}
